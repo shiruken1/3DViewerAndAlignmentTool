@@ -1,0 +1,17 @@
+.bottom {
+  display: flex;
+  .thumb {
+    margin-right: 10px;
+    img {
+      height: 100px;
+      width: 150px;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+  }
+  .right {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+}

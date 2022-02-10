@@ -1,0 +1,108 @@
+.bar {
+  background-color: #1d76bc;
+  border-radius: 6px;
+  color: white;
+  flex: 0 0 auto;
+  padding: 10px;
+  .inner {
+    border: 2px dashed white;
+    border-radius: 6px;
+    padding: 3px;
+    .top {
+      display: flex;
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 5px;
+      padding-top: 5px;
+      .left {
+        flex: 1 1 auto;
+        padding-left: 7px;
+      }
+      .title {
+        @extend .left;
+        font-size: 18px;
+	font-weight: 500;
+	padding-left: 7px;
+      }
+      .icon {
+        -webkit-text-stroke: 1px transparent;
+       }
+      .drag {
+        padding-right: 31px;
+        font-weight: 100;
+      }
+    }
+    .bottom {
+      align-items: stretch;
+      display: flex;
+      padding: 5px;
+      .artifact {
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        margin: 0px 5px;
+        .name {
+          font-size: 18px;
+          font-weight: 300;
+        }
+        .date {
+          font-size: 13px;
+          .label {
+            color: #777777;
+          }
+        }
+        padding: 10px;
+      }
+      .artifact:first-child {
+        margin-left: 0;
+      }
+      .artifact:last-child {
+        margin-right: 0;
+      }
+      .form {
+        align-items: flex-end;
+        display: flex;
+        flex: 1 1 0;
+        margin: 0px 5px;
+        .inputs {
+          display: flex;
+          flex: 1 1 0;
+          flex-direction: column;
+          margin-right: 5px;
+          .input {
+            margin: 5px 0;
+            &:first-child {
+              margin-top: 0;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        .button {
+          color: #1d76bc;
+          margin-left: 5px;
+          background-color: white !important;
+        }
+      }
+    }
+  }
+}
+.hoverBar {
+  @extend .bar;
+  background-color: #228cdd;
+}
+.failedBar {
+  @extend .bar;
+  background-color: #ff4242;
+  padding-left: 7px;
+}
+.hoverFailedBar {
+  @extend .failedBar;
+  background-color: #ff6b6b;
+  padding-left: 7px;
+}
+.disabledBar {
+  @extend .bar;
+  background-color: #b9b9b9;
+}

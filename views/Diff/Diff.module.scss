@@ -1,0 +1,27 @@
+.header {
+  color: #464646;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  height: 0;
+  margin-top: 20px;
+
+  .middle {
+    display: flex;
+    flex: 1 1 auto;
+
+    .left {
+      flex: 1 1 auto;
+      position: relative;
+    }
+  }
+}
+
+.fullScreen {
+  flex: 1 1 auto;
+}

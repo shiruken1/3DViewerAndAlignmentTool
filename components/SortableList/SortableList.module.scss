@@ -1,0 +1,41 @@
+div[role="listbox"].sortby {
+  color: #777777;
+  margin: 2px 0px 10px 0px;
+  float: right;
+}
+
+div[role="listbox"].sortby > i {
+  padding-right: 20px;
+}
+
+div[role="listbox"].sortProject {
+  float: left;
+  padding-top: 3px;
+}
+
+i[class="cloud upload icon"] {
+  padding-left: 1px;
+  padding-top: 2px;
+  color: #464646;
+  
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .header {
+    font-size:  18px !important;
+    font-weight: 500 !important;
+    float: left;
+    margin: 3px;
+  }
+  .list {
+    flex: 1 1 auto;
+    height: 0;
+    overflow-y: auto;
+    overflow-y: overlay;
+  }
+}
+ 

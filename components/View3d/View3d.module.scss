@@ -1,0 +1,43 @@
+$fullscreen-background-color: rgba(0, 0, 0, 0);
+$objid-background-color: rgba(128, 128, 128, .5);
+
+.WebGL {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  canvas {
+    cursor: crosshair;
+    display: block;
+    height: auto;
+    position: absolute;
+    width: auto;
+  }
+
+  .stats {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    opacity: .9;
+    position: absolute;
+    z-index: 10000;
+  }
+
+  .objId {
+    background-color: $objid-background-color;
+    bottom: 0;
+    padding: .5em;
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+  }
+
+  .fullScreen {
+    background-color: $fullscreen-background-color !important;
+    color: white !important;
+    top: 0;
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+  }
+}

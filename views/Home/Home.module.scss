@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px 20px;
+
+  .header {
+    color: #464646;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 22px 0 16px 0;
+  }
+
+  .content {
+    overflow-y: auto;
+  }
+}

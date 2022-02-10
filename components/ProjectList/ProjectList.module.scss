@@ -1,0 +1,75 @@
+.AddProject {
+  position: relative;
+  top: -2em;
+  left: 72%;
+  width: 7em;
+  min-height: 2em;
+  margin-bottom: -1.5em;
+}
+
+.Accordion {
+  h4 {
+    font-weight: normal !important;
+    font-size: 14px !important;
+    background-color: #f7f7f7;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+    margin-bottom: 0px;
+    margin-top: 6px;
+    max-width: 90%;
+
+    i {
+      transition: none !important;
+      transform: none !important;
+    }
+
+    i[class="dropdown icon"]:before {
+      font-family: Icons;
+      color: #b9b9b9;
+      font-size: 17px;
+      content: '\f078' !important;
+      -webkit-text-stroke: 1px white;
+    }
+  }
+
+  /* Project Selected */
+  h4[class="active title"] {
+    i[class="dropdown icon"]:before {
+      color: #b9b9b9;
+      font-size: 17px;
+      font-family: Icons;
+      -webkit-text-stroke: 1px white;
+      content: '\f077' !important;
+    }
+  }
+
+  .UsersDropdown, .SettingsDropdown {
+    float: right;
+    left: 3em;
+    position: relative;
+    color: #464646;
+  }
+}
+
+.ProjectDescription {
+  font-weight: 300;
+  max-width: 500px;
+  padding-left: 11px;
+}
+
+.ProjectBody {
+  max-width: 90%;
+  margin-top: -1em;
+  margin-bottom: -12px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  padding-left: 1.5em !important;
+}
+
+.Header {
+  font-weight: 500 !important;
+}
+
+div[class="ui fluid card"]:last-child:after {
+  margin-bottom: 10px;
+}

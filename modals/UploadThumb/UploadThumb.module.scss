@@ -1,0 +1,29 @@
+.content {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-around;
+  .preview {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+    .image {
+      height: 100px;
+      object-fit: contain;
+      width: 150px;
+      &.cover {
+        object-fit: cover;
+      }
+    }
+  }
+}
+.UploadCard {
+  border: 2px dashed gray !important;
+  box-shadow: none;
+  margin-bottom: 0 !important;
+
+  .dzActive {
+    background-color: green !important;
+  }
+}

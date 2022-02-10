@@ -1,0 +1,17 @@
+.Controls {
+
+  width: 350px;
+
+  >div>div:nth-of-type(2) {
+    overflow-y: hidden;
+
+    >div:first-of-type {
+      height: 30em;
+    }
+
+    /* VarianceList */
+    >div:last-of-type {
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.AccountCard {
+  .divider {
+    border-right: 1px solid lightgrey;
+    margin: 1em 0;
+  }
+  .sideLabel {
+    font-size: 18px;
+    font-weight: 300;
+    color: #464646;
+  }
+  .AddDiffsButton {
+      color: orange !important;
+  }
+  &:first-child {
+    margin-top: 0 !important;
+  }
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  [class="ui horizontal segments"] {
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 0 !important;
+
+    div {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .Thumb {
+      padding-left: 0;
+      max-width: 150px;
+      max-height: 100px;
+      padding: 0;
+    }
+
+    .AccountDescription {
+      max-width: 35% !important;
+      max-height: 75px;
+      font-weight: 300;
+      text-align: left;
+      line-height: 1.21;
+      text-overflow: wrap;
+      color: #464646;
+    }
+
+    .AccountInfo {
+      margin-top: 4px !important;
+      padding-left: 0;
+      padding-right: 4em;
+
+      div:first-of-type {
+        float: right;
+        margin-top: -8px !important;
+        margin-right: -41px !important;
+
+        table {
+          line-height: 1.21;
+          text-overflow: ellipsis;
+        }
+      }
+
+    }
+
+    > * {
+      border: none !important;
+    }
+  }
+
+  .AccountHalf {
+    /* margin-right: 22px !important; */
+    padding: 0 0 !important;
+    max-width: 50% !important;
+    border-left: none !important;
+
+    [class="ui fluid card"] {
+      box-shadow: none !important;
+
+      [class="header"] {
+        padding: 1em 0 0.5em 20px;
+
+        div:first-of-type:not([class="menu"]):not([class="item"]) {
+          float: right;
+
+          > * {
+            padding-right: 15px;
+          }
+        }
+      }
+
+      > [class="content"] {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-left: 20px !important;
+      }
+
+      > * {
+        border-top: none !important;
+      }
+    }
+
+  }
+
+  .AccountActivities {
+    overflow: auto;
+    max-height: 12em !important;
+  }
+
+  .ProjectHalf {
+    margin-left: 15px !important;
+    padding: 0 0 !important;
+    max-width: 50% !important;
+    border-left: none !important;
+
+    [class="ui fluid card"] {
+      box-shadow: none !important;
+
+      [class="header"] {
+        padding: 1em 0 0.5em 20px;
+
+        div:first-of-type:not([class="menu"]):not([class="item"]) {
+          float: right;
+
+          > * {
+            padding-right: 15px;
+          }
+        }
+      }
+
+      > [class="content"] {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-left: 20px !important;
+      }
+
+      > * {
+        border-top: none !important;
+      }
+    }
+  }
+
+  .ProjectList {
+    overflow: hidden;
+    padding: 5px 25px 65px 0px !important;
+    max-height: none;
+
+    header {
+      font-weight: 300 !important;
+    }
+
+    div[class^="SortableList_lists"] {
+      overflow: auto;
+    }
+  }
+
+}

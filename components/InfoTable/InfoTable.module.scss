@@ -1,0 +1,20 @@
+.table {
+  border: none !important;
+  margin-top: 0 !important;
+
+  .cell {
+    border-top: none !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+
+  }
+  .label {
+    @extend .cell;
+    color: #777777;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 72px;
+  }
+}

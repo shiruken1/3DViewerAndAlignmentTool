@@ -1,0 +1,16 @@
+.group {
+  left: 0;
+  margin: 0 !important;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+
+  :nth-child(1n) {
+    margin: 0 !important;
+    margin-bottom: 1px !important;
+  }
+  :last-child {
+    margin-bottom: 0 !important;
+  }
+}

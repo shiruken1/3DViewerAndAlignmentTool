@@ -1,0 +1,30 @@
+.actionButton {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+.info {
+  color: #d29b33;
+}
+.error {
+  color: #c60000;
+}
+
+.description {
+  font-size: 12px !important;
+  color: #464646 !important;
+}
+
+.drag {
+  margin: 10px 0px;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dragging {
+  transform: translate(0, 0);
+}

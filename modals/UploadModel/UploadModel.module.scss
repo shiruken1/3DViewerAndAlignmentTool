@@ -1,0 +1,96 @@
+.Card {
+  div[class="ui input"] {
+    width: 100% !important;
+  }
+
+  div[class*="UploadCard"] {
+    width: 100% !important;
+    background-color: #f7f7f7 !important;
+  }
+
+  input {
+    border: 1px solid #777 !important;
+  }
+
+  .leftColumn {
+    padding: 0 10% 5% 10%;
+
+    .sizeInfo {
+      position: absolute;
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 1.25;
+
+      span:first-of-type {
+        color: #777;
+
+      }
+      span:last-of-type {
+        color: #464646;
+      }
+    }
+  }
+
+  .rightColumn {
+    border-left: 1px solid lightgrey;
+    padding: 0 10%;
+    margin: 1em 0;
+
+    div[class*="UploadCard"] > div:first-of-type {
+      padding-top: 0 !important;
+    }
+
+    .additionalFile {
+      display: table-column;
+
+      >span {
+        position: relative;
+        top: -1em;
+        left: 15%;
+        font-size: 18px;
+        color: red;
+      }
+    }
+
+    .additionalInfo {
+      padding-top: 4em;
+      padding-left: 7%;
+      padding-right: 7%;
+
+      span:first-of-type {
+        padding-left: 2em;
+        font-size: 25px;
+        color: #b9b9b9;
+      }
+
+      span:last-of-type {
+        font-size: 16px;
+        color: #b9b9b9;
+      }
+
+    }
+
+    .sizeInfo {
+      position: relative;
+      top: -2.5em;
+      left: 35%;
+      font-size: 16px;
+      line-height: 1.25;
+
+      div[class="header"] {
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        padding-bottom: 5px;
+      }
+
+      span:first-of-type {
+        color: #777;
+
+      }
+      span:last-of-type {
+        color: #464646;
+      }
+    }
+  }
+
+}

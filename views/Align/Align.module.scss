@@ -1,0 +1,169 @@
+.header {
+  color: #464646;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 1em;
+  padding-left: 20px;
+  line-height: 1.22;
+
+  h3 {
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  span {
+    color: #464646;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+  }
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  max-height: 100%;
+  margin-top: -2.5em;
+
+  .middle {
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+
+    .left {
+      max-width: 50%;
+      flex: 1 1 auto;
+
+      div[class*="transition"] {
+        margin-bottom: 0 !important;
+
+        div[class="bar"] {
+          z-index: 2;
+          position: absolute;
+        }
+      }
+    }
+
+    .divider {
+      color: #2c2c2c;
+      background-color: #2c2c2c;
+    }
+
+    .stoplight {
+      width: 100%;
+      z-index: 2;
+      display: table;
+      position: absolute;
+      pointer-events: none;
+
+      .widgets {
+        width: 7%;
+        display: flex;
+        margin: 3.5em auto;
+        flex-direction: column;
+
+        .barbell {
+          display: flex;
+          padding-bottom: 0.3em;
+
+          .pending {
+            background-color: white;
+          }
+
+          /* Circles */
+          div:nth-of-type(1), div:nth-of-type(3) {
+            height: 20px;
+            width: 20px;
+            font-size: 1px;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 100%;
+          }
+
+          /* Lines */
+          div:nth-of-type(2) {
+            width: 4em;
+            height: 1px;
+            margin-top: 8px;
+          }
+        }
+
+        .verifyButton {
+          font-size: 15px;
+          border: 1px solid #b9b9b9;
+          pointer-events: all;
+        }
+      }
+
+    }
+
+    .right {
+      min-width: 50%;
+      flex: 1 1 auto;
+
+      div:first-of-type {
+        position: absolute !important;
+        z-index: 2;
+
+        div[class^="LoaderProgress"] {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.Confirm {
+  height: 100%;
+  display: flex;
+}
+
+.ToolBar {
+  top: 4.5em;
+  z-index: 1;
+  position: relative;
+  pointer-events: none;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  background-color: rgba(0,0,0,0) !important;
+
+  a:not([class*="header item"]) {
+    text-decoration: underline !important;
+    pointer-events: all;
+  }
+
+  * {
+    font-size: 12px;
+    color: #777 !important;
+
+    >:not(i) {
+      font-family: Roboto !important;
+    }
+  }
+
+  [class*="header item"] {
+    font-size: 18px;
+    pointer-events: all;
+  }
+  [class*="header item"]:before {
+    background: none !important;
+  }
+
+  .centerBar {
+    width: 100%;
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+    > *:before {
+      background: none !important;
+    }
+  }
+}

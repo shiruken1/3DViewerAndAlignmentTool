@@ -1,0 +1,12 @@
+.image {
+  width: 64px !important;
+}
+.label {
+  font-size: 32px !important;
+  height: 64px;
+  width: 64px;
+}
+ 
+img[class="ui small image"] {
+  border-radius: 5px;
+}

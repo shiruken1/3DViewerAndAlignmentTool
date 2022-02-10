@@ -1,0 +1,88 @@
+.Content {
+  padding: 0 5em !important;
+  background-color: #f7f7f7 !important;
+
+  .Header {
+    div[class*="UploadFileCard"] {
+      margin: 0 auto !important;
+      width: 50%;
+      background-color: #f7f7f7;
+    }
+
+    .file {
+      height: 100%;
+    }
+  }
+  .noneChoice {
+    font-style: italic;
+    color: gray !important;
+  }
+
+  div[class*="dropdown"] {
+    min-width: 270px !important;
+    background-color: #eaeaea !important;
+  }
+
+  div[class="ui input"] > input {
+    background-color: #eaeaea !important;
+  }
+  
+  ::placeholder {
+    color: #464646 !important;
+  }
+
+  input, label, div:not([class*="UploadFileCard"]) {
+    color: #464646 !important;
+    font-weight: 400 !important;
+  }
+
+  table, table>* td, table>tbody>tr {
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    border: 1px !important;
+    border-top: none !important;
+    border-bottom: none !important;
+   
+  }
+
+  .Xformrow {
+    float: right;
+
+    div[class="ui basic label"] {
+      border: none !important;
+      padding-left: 0;
+      background-color: #f7f7f7;
+    }
+
+    div {
+      display: inline-flex !important;
+      max-height: 20px;
+      padding-right: 0 !important;
+
+      label {
+        margin-top: 2px !important;
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+      }
+
+      label:after {
+        display: initial !important;
+      }
+
+      input {
+        max-width: 5em;
+        margin-right: 5px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0 !important;
+        background-color: #eaeaea !important;
+        border: none !important;
+        border-radius: 0px !important;
+        -moz-appearance:textfield;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spint-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+}

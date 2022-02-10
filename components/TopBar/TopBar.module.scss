@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex: 0 0 auto;
+  height: 70px;
+  margin: 0 20px;
+  .header {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    color: #1d75bc;
+    display: flex;
+    padding: 25px 20px;
+    border-radius: 0px 0px 6px 6px;
+    img {
+      height: 35px;
+      margin-top: -8px;
+    }
+    .skur {
+      display: flex;
+      font-size: 33px;
+      font-weight: 700;
+      padding-left: 5px;
+      padding-right: 5px;
+      div {
+        font-size: 11px;
+        font-weight: 400;
+        position: absolute;
+        top: 57px;
+        margin-left: 30px;
+        margin-top: -10px;
+      }
+    }
+  }
+  .breadcrumb {
+    flex: 1 1 auto;
+    margin: 20px;
+  }
+  .menu {
+    flex: 0 0 auto;
+    margin: 20px 5px;
+    .noborder {
+      background-color: transparent;
+      color: #777777;
+      border: none !important;
+      a { // link icon
+        padding: 0px 5px;
+      }
+      a.help {
+        margin-top: 6px;
+        color: grey;
+      }
+      .settings {
+        padding-top: 7px;
+        span {
+        display: flex;
+          font-size: 15px;
+        }
+        [class="item"] {
+          display: flex;
+        }
+        .icon {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
